@@ -2,7 +2,8 @@ import axios from "axios";
 
 // Single source of truth for the backend base URL.
 // Set VITE_API_URL in .env for local dev / deployment.
-const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+const API_BASE_URL = import.meta.env.VITE_API_URL || "https://onrender.com";
+
 
 const api = axios.create({
   baseURL: API_BASE_URL,
