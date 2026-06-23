@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Single source of truth for the backend base URL.
 // Fixed: Explicitly falling back to your live Render backend service path.
-const API_BASE_URL = import.meta.env.VITE_API_URL || "https://onrender.com";
+const API_BASE_URL = import.meta.env.VITE_API_URL || "";
 
 const api = axios.create({
   baseURL: API_BASE_URL,
